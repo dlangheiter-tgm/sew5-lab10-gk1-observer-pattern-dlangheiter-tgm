@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="sew5-lab10-gk1-observer-pattern-dlangheiter-tgm.main" target="1.8" />
+      <module name="sew5-lab10-gk1-observer-pattern-dlangheiter-tgm.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
