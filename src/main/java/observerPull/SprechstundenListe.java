@@ -1,6 +1,7 @@
 package observerPull;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Klasse zur sammlung von Sprechstunden (Liste) + Subject
@@ -51,7 +52,7 @@ public class SprechstundenListe implements Subject {
 	 */
 	public void sendUpdate() {
 		for(Observer observer : observers) {
-			observer.update(this);
+			observer.update();
 		}
 	}
 
@@ -59,7 +60,7 @@ public class SprechstundenListe implements Subject {
      * getter für die Sprechstunden Liste
 	 * @return Die Liste der sprechstunden
 	 */
-	public ArrayList<Sprechstunde> getList() {
+	public List<Sprechstunde> getState() {
 		return list;
 	}
 }

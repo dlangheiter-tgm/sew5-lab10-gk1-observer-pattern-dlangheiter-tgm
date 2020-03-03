@@ -1,5 +1,7 @@
 package observerPull;
 
+import java.util.List;
+
 /**
  * Ein subject wo sich ein Observer anmelden und abmelden kann
  */
@@ -21,5 +23,7 @@ public interface Subject {
      * Sendet ein update an alle angemeldeted Observer
 	 */
 	void sendUpdate();
+
+	List<Sprechstunde> getState();
 
 }
