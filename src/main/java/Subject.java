@@ -1,11 +1,9 @@
-public interface Subject extends Observer {
+public interface Subject {
 
-	private Observer[] observer;
+	void attach(Observer observer);
 
-	public abstract void attach(Observer observer);
+	void remove(Observer observer);
 
-	public abstract void remove(Observer observer);
-
-	public abstract void notify();
+	void sendUpdate();
 
 }

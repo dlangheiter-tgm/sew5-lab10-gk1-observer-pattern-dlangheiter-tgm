@@ -1,12 +1,10 @@
 import java.util.ArrayList;
 
-public class SprechstundenListe extends Sprechstunde implements Subject {
+public class SprechstundenListe implements Subject {
 
-	private ArrayList observers;
+	private ArrayList<Observer> observers;
 
-	private ArrayList list;
-
-	private Sprechstunde[] sprechstunde;
+	private ArrayList<Sprechstunde> list;
 
 	public void addSprechstunde(Sprechstunde stunde) {
 
@@ -34,9 +32,9 @@ public class SprechstundenListe extends Sprechstunde implements Subject {
 
 
 	/**
-	 * @see Subject#notify()
+	 * @see Subject#sendUpdate()
 	 */
-	public void notify() {
+	public void sendUpdate() {
 
 	}
 
