@@ -7,7 +7,6 @@ public class SprechstundenListe implements Subject {
 	private ArrayList<Sprechstunde> list;
 
 	public void addSprechstunde(Sprechstunde stunde) {
-
 	}
 
 	public void removeSprechstunde(Sprechstunde stunde) {
@@ -38,4 +37,7 @@ public class SprechstundenListe implements Subject {
 
 	}
 
+	public ArrayList<Sprechstunde> getList() {
+		return list;
+	}
 }
