@@ -1,3 +1,5 @@
+package observerPush;
+
 public class Sprechstunde {
 
 	public Sprechstunde(String lehrer, String raumnummer, int wochentag, String begin, String end) {

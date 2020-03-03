@@ -1,3 +1,5 @@
+package observerPush;
+
 import java.util.ArrayList;
 
 public class SprechstundenListe implements Subject {

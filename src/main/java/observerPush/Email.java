@@ -1,3 +1,5 @@
+package observerPush;
+
 public class Email implements Observer {
 
 	/**
