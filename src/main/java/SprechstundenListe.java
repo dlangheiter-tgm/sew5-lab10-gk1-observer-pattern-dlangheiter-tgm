@@ -6,6 +6,11 @@ public class SprechstundenListe implements Subject {
 
 	private ArrayList<Sprechstunde> list;
 
+	public SprechstundenListe() {
+		this.observers = new ArrayList<>();
+		this.list = new ArrayList<>();
+	}
+
 	public void addSprechstunde(Sprechstunde stunde) {
 		this.list.add(stunde);
 	}
