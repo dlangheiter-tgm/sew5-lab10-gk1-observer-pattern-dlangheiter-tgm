@@ -2,6 +2,9 @@ package observerPush;
 
 import java.util.ArrayList;
 
+/**
+ * Klasse zur sammlung von Sprechstunden (Liste) + Subject
+ */
 public class SprechstundenListe implements Subject {
 
 	private ArrayList<Observer> observers;
@@ -13,10 +16,18 @@ public class SprechstundenListe implements Subject {
 		this.list = new ArrayList<>();
 	}
 
+	/**
+	 * Fügt eine neue Sprechstunde hinzu
+	 * @param stunde Die Sprechstunde zum hinzufügen
+	 */
 	public void addSprechstunde(Sprechstunde stunde) {
 		this.list.add(stunde);
 	}
 
+	/**
+	 * Löscht eine Sprechstunde aus der liste
+	 * @param stunde Die Sprechstunde die entfernt werden soll
+	 */
 	public void removeSprechstunde(Sprechstunde stunde) {
 		this.list.remove(stunde);
 	}
@@ -28,14 +39,12 @@ public class SprechstundenListe implements Subject {
 		this.observers.add(observer);
 	}
 
-
 	/**
 	 * @see Subject#remove(Observer)
 	 */
 	public void remove(Observer observer) {
 		this.observers.remove(observer);
 	}
-
 
 	/**
 	 * @see Subject#sendUpdate()
@@ -46,6 +55,10 @@ public class SprechstundenListe implements Subject {
 		}
 	}
 
+	/**
+	 * getter für die Sprechstunden Liste
+	 * @return Die Liste der sprechstunden
+	 */
 	public ArrayList<Sprechstunde> getList() {
 		return list;
 	}
